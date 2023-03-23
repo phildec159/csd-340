@@ -1,0 +1,27 @@
+div.container {
+	margin-top: 50px;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+h1,h2,h3,h4 {
+	background-color: #1ce8e1;
+	color: #000000;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #D6A800;
+	padding: 10px;
+}
+
+a:link {
+	color: #0e807c;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #07f58a;
+}
+
+a:visited {
+	color: #f507d9;
+}
