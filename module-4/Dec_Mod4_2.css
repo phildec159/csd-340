@@ -1,0 +1,39 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.image-gallery {
+    margin-top: 10%;
+}
+
+h1, h3 {
+    text-align: center;
+    color: rgb(8, 82, 243);
+}
+
+figure {
+    text-align: center;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: .75em;
+    color: rgba(60, 132, 226, 0.8);
+}
+
+.Bottom {
+    margin-top: 0%;
+    text-align: right;
+    margin-bottom: 20px;
+}
