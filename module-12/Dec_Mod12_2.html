@@ -1,0 +1,71 @@
+<!--Phillip Dec : Assignment 12.2-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>"CSD 340 Web Development with HTML and CSS"</title>
+	<link href="Dec_Mod3_3.css" type="text/css" rel="stylesheet">
+    <script>
+        const books = ["The Magicians",
+        "The Magician King",
+        "The Magician's Land",
+        "Eragon",
+        "Eldest",
+        "Brisingr",
+        "Inheritance",
+        "Heaven Official's Blessing",
+        "Harry Potter and the Deathly Hallows",
+        "Harry Potter and the Half-Blood Prince"];
+
+        function topBottom(array) {
+            let blen = array.length;
+            var displayField = document.getElementById("listArea");
+            displayField.innerHTML = "";
+            for (let i = 0; i < blen; i++) {
+                displayField.innerHTML += '<li>' + (i+1) +" "+ array[i] + "</li>"
+            }
+        }
+        function bottomTop(array) {
+            let bReverse = array.reverse();
+            let blen = array.length;
+            var displayField = document.getElementById("listArea");
+            displayField.innerHTML = "";
+            for (let i = 0; i < blen; i++) {
+                displayField.innerHTML += '<li>' + (10-i) +" "+ array[i] + "</li>"
+            }
+            array.reverse();
+        }
+    </script>
+</head>
+
+<body>
+	<div id="container">
+		<h1 style="text-align:center;">Assignment 12.2: JavaScript - Part 4</h1>
+        <div class="Left">
+            <h3 class="ordered">"Top 10 Favorite Books"</h3>
+            <p><button type="button" onclick="topBottom(books)">Top to Bottom</button><button type="button" onclick="bottomTop(books);">Bottom to Top</button></p>
+            <div id="listArea">
+                <ol>
+                    <script>
+                        for (let i = 0; i < books.length; i++) {
+                            document.write("<li>" + books[i] +"</li>");
+                        }
+                    </script>
+                </ol>
+            </div>
+        </div><!--end of left-->
+		<div class="Right">
+            <h3 class="unordered">"5 Things I've Learned Since the Course Started"</h3>
+            <ul>
+                <li>I've learned what chromostereopsis is.</li>
+                <li>I've learned how to style HTML pages with css.</li>
+                <li>I've learned how to add links to HTML documents.</li>
+                <li>I've learned about GitHub Pages and how to use that to host a website with my repository.</li>
+                <li>I've learned how different color deficiencies can appear to those with color blindness.</li>
+            </ul>
+        </div><!--end of right-->
+	</div><!--End of container-->
+    <div class="Bottom">
+        <a href="../index.html">Home Page</a>
+    </div><!--end of bottom-->
+</body>
+</html>

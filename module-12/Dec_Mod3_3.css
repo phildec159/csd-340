@@ -1,0 +1,52 @@
+h1 {
+    text-align: center;
+}
+
+.Left {
+    width: 45%;
+    float: left;
+    border: 1px;
+    border-style: solid;
+    border-color: red;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.Right {
+    width: 45%;
+    float: right;
+    border: 1px;
+    border-color: red;
+    border-style: dashed;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.Bottom {
+    margin-top: 60%;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-weight: 500;
+}
+
+ol {
+    list-style-position: inside;
+    font-weight: 300;
+}
+
+ul {
+    font-weight: 300;
+    list-style-type: upper-roman;
+    list-style-position: inside;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
